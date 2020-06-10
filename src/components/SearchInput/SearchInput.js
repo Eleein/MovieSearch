@@ -16,9 +16,9 @@ export function SearchInput({ showMovies }) {
         value={searchQuery}
         onChange={({ target }) => setSearchQuery(target.value)}
       />
-      {searchQuery}
+
       <button type="button" onClick={handleQuery}>
-        Click me
+        SEARCH
       </button>
     </form>
   );
