@@ -22,7 +22,9 @@
   width: 7%;
   font-weight: bold;
 }
-.searchBtn:hover{
+
+.searchBtn:hover, .searchBtn:focus{
   text-decoration:none;
   background:#eee;
+  border: none;
 }
