@@ -1,0 +1,28 @@
+@import "styles/theme";
+
+.formLayout {
+  margin-top: 1em;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  height: 1.5em;
+  width: 40%;
+}
+
+.searchBtn {
+  margin-left: 0.5em;
+  background-color: white;
+  border: 1.5px solid black;
+  width: 7%;
+  font-weight: bold;
+}
+.searchBtn:hover{
+  text-decoration:none;
+  background:#eee;
+}
