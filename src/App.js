@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./styles/global.scss";
 import { Header } from "./components/Header/Header";
 import { SearchInput } from "./components/SearchInput/SearchInput";
 import { getMovies } from "./components/api/api";
@@ -13,6 +14,8 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
+      <SearchInput showMovies={showMovies} />
       {movies.map((movie) => {
         return (
           <div>
@@ -20,9 +23,6 @@ function App() {
           </div>
         );
       })}
-      Hello World
-      <Header />
-      <SearchInput showMovies={showMovies} />
     </div>
   );
 }

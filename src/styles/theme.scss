@@ -1,0 +1,19 @@
+
+//colors
+$black: rgb(35, 37, 44);
+
+//fonts
+
+$font-family: sans-serif;
+$font-title: 48px;
+$bold-font: bold;
+
+//layout
+$horizontalCenter: 0 auto;
+$flexedItem: flex;
+
+//header
+.header{
+  color: whitesmoke;
+  font-size: $font-title;
+}

@@ -14,11 +14,11 @@ export function SearchInput({ showMovies }) {
         type="text"
         placeholder="Search movie here"
         value={searchQuery}
-        onChange={({ target }) => setSearchQuery(target.value)}
+        onChange={({ target:{value} }) => setSearchQuery(value)}
       />
-      {searchQuery}
+
       <button type="button" onClick={handleQuery}>
-        Click me
+        SEARCH
       </button>
     </form>
   );
