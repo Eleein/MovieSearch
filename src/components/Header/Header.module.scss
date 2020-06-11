@@ -1,14 +1,14 @@
 @import "styles/theme";
 
 .headerLayout {
-  display: flex;
+  display: $flexedItem;
 }
 
 .headerStyles {
   background-color: $black;
-  font-weight: bold;
+  font-weight: $bold-font;
 }
-h1 {
-  margin: 0 auto;
+.pageTitle {
+  margin: $horizontalCenter;
   @extend .header;
 }
