@@ -3,7 +3,7 @@ import "./styles/global.scss";
 import { Header } from "./components/Header/Header";
 import { SearchInput } from "./components/SearchInput/SearchInput";
 import { getMovies } from "./components/api/api";
-import {MoviesMenu} from "components/MoviesMenu/MoviesMenu";
+import { MoviesMenu } from "components/MoviesMenu/MoviesMenu";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -17,13 +17,6 @@ function App() {
     <div className="App">
       <Header />
       <SearchInput showMovies={showMovies} />
-      {/*{movies.map((movie) => {*/}
-      {/*  return (*/}
-      {/*    <div>*/}
-      {/*      {movie.title} <img src={movie.poster} alt={movie.title} />*/}
-      {/*    </div>*/}
-      {/*  );*/}
-      {/*})}*/}
       <MoviesMenu movies={movies} />
     </div>
   );
