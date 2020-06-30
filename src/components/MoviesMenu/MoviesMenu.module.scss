@@ -1,45 +1,14 @@
 @import "styles/theme";
 
-.subtitleAndMoviesLayout{
+.subtitleAndMoviesLayout {
   margin-top: 10px;
   text-align: center;
 }
 
-.subtitle{
-
-}
-
-.moviesLayout{
-margin-top:20px;
-
-}
-
-.moviesList{
-  list-style: none;
-  display: $flexedItem;
-  flex-wrap: wrap;
-  justify-content: center;
-
-
+.subtitle {
+  font-size:20px;
+  font-weight: $bold-font;
+  margin: 30px;
 }
 
 
-.movieItem{
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin-bottom: 30px;
-  align-items: center;
-}
-.movieTitle{
-width:75%;
-  height: 36px;
-}
-
-
-.moviePic{
-  height: 300px;
-  width: 200px;
-  margin: 10px;
-}

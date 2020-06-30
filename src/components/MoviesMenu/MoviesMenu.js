@@ -1,26 +1,14 @@
 import React from "react";
 import styles from "./MoviesMenu.module.scss";
+import {Movies} from "components/MoviesMenu/Movies/Movies";
 
 export function MoviesMenu({ movies }) {
-
   return (
     <div className={styles.subtitleAndMoviesLayout}>
-      <span className={styles.subtitle}>
+      <h1 className={styles.subtitle}>
         Sharing a few of our favorite movies
-      </span>
-      <div className={styles.moviesLayout}>
-        <ul className={styles.moviesList}>
-          {movies.map(({ title, poster, year }) => {
-            return (
-              <li className={styles.movieItem}>
-                <span className={styles.movieTitle}>{title} </span>{" "}
-                <img className={styles.moviePic} src={poster} alt={title} />
-                <span>{year}</span>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      </h1>
+      <Movies movies={movies}/>
     </div>
   );
 }
