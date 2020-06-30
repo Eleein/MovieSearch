@@ -4,11 +4,11 @@ $black: rgb(40, 44, 52);
 
 //fonts
 
-$font-family: Arial, sans-serif;
-$font-title: 48px;
-$bold-font: bold;
-$sub-title: 20px;
-$search-Btn: 9px;
+$fontFamily: Arial, sans-serif;
+$fontTitle: 48px;
+$boldFont: bold;
+$subtitle: 20px;
+$searchBtn: 9px;
 
 
 //layout
@@ -21,7 +21,7 @@ $searchBorder:1.5px solid black;
 //header
 .header{
   color: whitesmoke;
-  font-size: $font-title;
+  font-size: $fontTitle;
 }
 
 //layout classes
@@ -29,4 +29,10 @@ $searchBorder:1.5px solid black;
 .flexedAndAligned{
   display: flex;
   justify-content: center;
+}
+
+.flexedAlignedColumn{
+  align-items: center;
+  display: $flexedItem;
+  flex-direction: column;
 }

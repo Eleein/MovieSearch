@@ -11,17 +11,15 @@
 
 .movieItem {
   width: 250px;
-  display: $flexedItem;
-  flex-direction: column;
   flex-wrap: nowrap;
   margin-bottom: 30px;
-  align-items: center;
+  @extend .flexedAlignedColumn;
 }
 .movieTitle {
   width: 75%;
   height: 36px;
   overflow: hidden;
-  font-weight: $bold-font;
+  font-weight: $boldFont;
 }
 
 .moviePic {
