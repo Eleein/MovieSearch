@@ -7,13 +7,26 @@ $black: rgb(40, 44, 52);
 $font-family: Arial, sans-serif;
 $font-title: 48px;
 $bold-font: bold;
+$sub-title: 20px;
+$search-Btn: 9px;
+
 
 //layout
 $horizontalCenter: 0 auto;
 $flexedItem: flex;
+$searchBorder:1.5px solid black;
+
+
 
 //header
 .header{
   color: whitesmoke;
   font-size: $font-title;
+}
+
+//layout classes
+
+.flexedAndAligned{
+  display: flex;
+  justify-content: center;
 }

@@ -5,9 +5,8 @@
 
 .moviesList {
   list-style: none;
-  display: $flexedItem;
   flex-wrap: wrap;
-  justify-content: center;
+  @extend .flexedAndAligned;
 }
 
 .movieItem {
