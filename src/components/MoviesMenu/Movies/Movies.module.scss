@@ -1,0 +1,29 @@
+@import "styles/theme";
+.moviesLayout {
+  margin-top: 20px;
+}
+
+.moviesList {
+  list-style: none;
+  flex-wrap: wrap;
+  @extend .flexedAndAligned;
+}
+
+.movieItem {
+  width: 250px;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  @extend .flexedAlignedColumn;
+}
+.movieTitle {
+  width: 75%;
+  height: 36px;
+  overflow: hidden;
+  font-weight: $boldFont;
+}
+
+.moviePic {
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+}

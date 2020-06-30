@@ -1,0 +1,31 @@
+@import "styles/theme";
+
+.formLayout {
+  margin-top: 30px;
+}
+
+.form {
+  width: 100%;
+  @extend .flexedAndAligned;
+}
+
+.input {
+  height: 1.5em;
+  width: 40%;
+}
+
+.searchBtn {
+  margin-left: 0.5em;
+  background-color: white;
+  border: $searchBorder;
+  min-width: 8%;
+  font-weight: $boldFont;
+  font-size: $searchBtn;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  text-decoration: none;
+  background: #eee;
+  border: none;
+}

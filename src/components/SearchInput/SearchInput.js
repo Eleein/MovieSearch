@@ -9,17 +9,23 @@ export function SearchInput({ showMovies }) {
     showMovies(searchQuery);
   }
   return (
-    <form onSubmit={handleQuery}>
-      <input
-        type="text"
-        placeholder="Search movie here"
-        value={searchQuery}
-        onChange={({ target:{value} }) => setSearchQuery(value)}
-      />
+    <div className={styles.formLayout}>
+      <form className={styles.form} onSubmit={handleQuery}>
+        <input
+          className={styles.input}
+          type="text"
+          value={searchQuery}
+          onChange={({ target: { value } }) => setSearchQuery(value)}
+        />
 
-      <button type="button" onClick={handleQuery}>
-        SEARCH
-      </button>
-    </form>
+        <button
+          className={styles.searchBtn}
+          type="button"
+          onClick={handleQuery}
+        >
+          SEARCH
+        </button>
+      </form>
+    </div>
   );
 }

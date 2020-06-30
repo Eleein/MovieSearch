@@ -1,0 +1,14 @@
+@import "styles/theme";
+
+.subtitleAndMoviesLayout {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: $subtitle;
+  font-weight: $boldFont;
+  margin: 30px;
+}
+
+
